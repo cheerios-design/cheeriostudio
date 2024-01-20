@@ -347,3 +347,92 @@ footer .cols .news-col form button:hover {
 footer .cols .news-col form button i {
     font-size: 26px;
 }
+
+/* Add styles for contact page here */
+
+.contact-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: var(--secondary-color);
+    border-radius: 10px;
+    color: var(--white-color);
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Miriam Libre', monospace;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 20px;
+
+}
+
+.contact-form label {
+    color: var(--black-color);
+    font-family: 'Miriam Libre', monospace;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    background: #383e45;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Miriam Libre', monospace;
+}
+
+.contact-form button {
+    background: var(--primary-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/*--- Privacy Policy ----*/
+
+main {
+    padding: 25px;
+}
+
+.privacy-policy h1 {
+    color: var(--primary-color);
+    font-size: 3rem;
+    padding-bottom: 15px;
+}
+
+.privacy-policy p {
+    font-family: 'Miriam Libre', monospace;
+    font-size: 20px;
+    padding: 10px 15px 10px 15px;
+    width: 1000px;
+}
+
+.privacy-policy strong {
+    font-weight: 200px;
+    font-size: 25px;
+    color: var(--secondary-color);
+}
