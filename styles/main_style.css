@@ -37,9 +37,10 @@ span {
 
 .navbar {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: 35vh;
     padding: 0 50px;
 }
 
@@ -50,26 +51,42 @@ span {
 
 .navbar ul {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    text-align: start;
+    align-items: center;
 }
 
 .navbar ul li {
     list-style: none;
+    padding-bottom: 0.6rem;
+    background-color: var(--secondary-color);
+    width: 100%;
+    text-align: center;
 }
+
+.navbar ul li:hover {
+    background-color: var(--white-color);
+}
+
+.navbar ul li:active {
+    background-color: var(--black-color);
+}
+
 
 .navbar ul li a {
     text-decoration: none;
     color: var(--primary-color);
-    font-size: 16px;
-    margin-right: 25px;
+    font-size: 1.3rem;
+    margin-right: 2rem;
     transition: color 0.3s ease;
+    text-align: center;
+    align-items: center;
 }
 
 .navbar ul li:hover a {
     color: var(--secondary-color);
-}
-
-.navbar ul li:last-child a {
-    margin: 0;
 }
 
 .hire-btn {
@@ -87,53 +104,55 @@ span {
     color: var(--secondary-color);
 }
 
-.main {
+main {
     background-color: var(--white-color);
     padding: 90px 85px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
     height: 670px;
 }
 
-.main .left {
+main .left {
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
-.main .left h4 {
+main .left h4 {
     margin-top: 10px;
     font-weight: bold;
-    font-size: 52px;
+    font-size: 1.2rem;
     color: var(--primary-color);
 }
 
-.main .left .title span {
+main .left .title span {
     color: var(--secondary-color);
-    font-size: 25px;
+    font-size: 1.2rem;
 }
 
-.main .left .title {
+main .left .title {
     color: var(--primary-color);
     font-size: 22px;
     margin-top: 20px;
 }
 
-.main .left .subtitle {
+main .left .subtitle {
     color: var(--primary-color);
     font-size: 20px;
     margin-top: 10px;
 }
 
-.main .right img {
-    width: 500px;
+main .right img {
+    width: 300px;
 }
 
 .about-item {
-    display: grid;
-    grid-column: auto auto auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15rem;
     gap: 20px;
     height: 400px;
     align-items: center;
@@ -170,12 +189,15 @@ span {
 .skills {
     margin-top: 150px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     padding: 0 50px;
+    margin-top: 20rem;
+    align-items: center;
 }
 
 .skills .left {
-    width: 680px;
+    width: 400px;
 }
 
 .skills .left .info h3 {
@@ -190,7 +212,7 @@ span {
 }
 
 .skills .left button {
-    margin-top: 30px;
+    margin-top: 2rem;
 }
 
 .skills .right {
@@ -219,10 +241,10 @@ span {
 }
 
 footer {
-    position: relative;
+    position: absolute;
     background: var(--black-color);
     padding: 80px 50px 40px;
-    margin-top: 100px;
+    margin-top: 1500px;
 }
 
 footer .start {
@@ -260,6 +282,7 @@ footer .start button:hover {
 footer .cols {
     display: flex;
     align-items: start;
+    margin-top: 1rem;
 }
 
 footer .cols .about-col {
@@ -410,29 +433,4 @@ footer .cols .news-col form button i {
         width: 100%;
         margin-top: 0;
     }
-}
-
-/*--- Privacy Policy ----*/
-
-main {
-    padding: 25px;
-}
-
-.privacy-policy h1 {
-    color: var(--primary-color);
-    font-size: 3rem;
-    padding-bottom: 15px;
-}
-
-.privacy-policy p {
-    font-family: 'Miriam Libre', monospace;
-    font-size: 20px;
-    padding: 10px 15px 10px 15px;
-    width: 1000px;
-}
-
-.privacy-policy strong {
-    font-weight: 200px;
-    font-size: 25px;
-    color: var(--secondary-color);
 }
