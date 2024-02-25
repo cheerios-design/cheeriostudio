@@ -1,0 +1,36 @@
+{
+    "portfolio": [
+        {
+            "project_title": "Project - InnoScape",
+            "description": "Re-Branding the identity of the company",
+            "technologies_used": [
+                "Adobe Creative Suits (Ai, Ps)"
+            ],
+            "github_link": "-NA-",
+            "demo_link": "Link to live demo (if available)",
+            "image_link": ""
+        },
+        {
+            "project_title": "Project 2",
+            "description": "Description of Project 2",
+            "technologies_used": [
+                "Technology 1",
+                "Technology 3"
+            ],
+            "github_link": "Link to GitHub repository",
+            "demo_link": "Link to live demo (if available)",
+            "image_link": "Link to project image (if available)"
+        },
+        {
+            "project_title": "Project 3",
+            "description": "Description of Project 3",
+            "technologies_used": [
+                "Technology 2",
+                "Technology 4"
+            ],
+            "github_link": "Link to GitHub repository",
+            "demo_link": "Link to live demo (if available)",
+            "image_link": "Link to project image (if available)"
+        }
+    ]
+}
